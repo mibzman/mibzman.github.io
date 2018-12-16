@@ -1,0 +1,27 @@
+#hero p:before {
+	all: unset;
+}
+
+#hero p {
+	margin-top: 14px;
+	padding-top: 14px;
+}
+
+#top #top-brand a {
+	color: #000;
+	text-decoration: none;
+}
+
+#top #top-nav-main a {
+	display: inline-block;
+}
+#top #top-nav-main a {
+	color: #000;
+	text-decoration: none;
+}
+#top #top-brand a:hover {
+	-moz-transition: all linear 0.2s;
+	transition: all linear 0.2s;
+	color: rgba(0, 0, 0, 0.6);
+	text-decoration: underline;
+}

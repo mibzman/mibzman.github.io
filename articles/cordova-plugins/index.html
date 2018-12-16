@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta name="generator" content="Hugo 0.52" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> How to develop new Cordova plugins for Ionic without loosing your mind </title>
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  <meta name="author" content="">
+
+
+  <meta property="og:title" content="How to develop new Cordova plugins for Ionic without loosing your mind" />
+<meta property="og:description" content="After 9 months of running a production Ionic App (HungerPerks), we finally got to the point where we needed a custom Cordova plugin, distinct enough to not be able to just fork an existing one and make changes to it. Unfortunately, all the articles, Github repos, and documentation were all some combination of outdated, incomplete, or broken.
+This article will broadly discuss:
+ The parts of a Cordova plugin, and where they live in an Ionic app A simple example plugin How to develop a plugin in a sane way  Now let’s get started!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/articles/cordova-plugins/" /><meta property="article:published_time" content="2018-01-12T19:21:54-05:00"/>
+<meta property="article:modified_time" content="2018-01-12T19:21:54-05:00"/>
+
+  
+
+
+
+
+  
+  
+  
+  
+  
+
+  <link rel="canonical" href="/articles/cordova-plugins/">  
+
+    <link rel="shortcut icon" href="/favicon.ico">
+
+  <link href="/css/font.css" rel="stylesheet" type="text/css">
+  <link href="/css/kube.min.css" rel="stylesheet" type="text/css">
+  <link href="/css/kube.legenda.css" rel="stylesheet" type="text/css">
+  <link href="/css/highlight.css" rel="stylesheet" type="text/css">
+  <link href="/css/master.css" rel="stylesheet" type="text/css">
+  <link href="/css/kube.demo.css" rel="stylesheet" type="text/css">
+
+ <link href="/css/custom.css" rel="stylesheet" type="text/css">
+ <link href="/css/custom.css" rel="stylesheet" type="text/css">
+
+  <script src="/js/jquery-2.1.4.min.js" type="text/javascript">
+  </script>
+
+  <script type="text/javascript" src="/js/tocbot.min.js"></script>
+</head>
+
+
+<body class="page-kube">
+  <header> <div class="show-sm" style="background-color: #D0221E">
+  <div id="nav-toggle-box">
+    <div id="nav-toggle-brand">
+      <a href="/">Pepware</a>
+    </div><a data-component="toggleme" data-target="#top" href="#" id="nav-toggle"><i class="kube-menu"></i></a>
+  </div>
+</div>
+<div class="hide-sm" id="top" style="background-color: #D0221E">
+  <div id="top-brand">
+    <a href="/" title="home">Pepware</a>
+  </div>
+  <nav id="top-nav-main">
+    <ul>
+     
+     
+  <li><a href="/articles/" >Articles</a></li>
+  
+    </ul>
+  </nav>
+  <nav id="top-nav-extra"> 
+    <ul>
+        
+    </ul>
+  </nav>
+</div>
+ </header>
+  <main>
+<div class="push-center" itemscope itemtype="http://schema.org/BlogPosting">
+    
+<meta itemprop="name" content="How to develop new Cordova plugins for Ionic without loosing your mind">
+<meta itemprop="description" content="After 9 months of running a production Ionic App (HungerPerks), we finally got to the point where we needed a custom Cordova plugin, distinct enough to not be able to just fork an existing one and make changes to it. Unfortunately, all the articles, Github repos, and documentation were all some combination of outdated, incomplete, or broken.
+This article will broadly discuss:
+ The parts of a Cordova plugin, and where they live in an Ionic app A simple example plugin How to develop a plugin in a sane way  Now let’s get started!">
+
+
+<meta itemprop="datePublished" content="2018-01-12T19:21:54-05:00" />
+<meta itemprop="dateModified" content="2018-01-12T19:21:54-05:00" />
+<meta itemprop="wordCount" content="760">
+
+
+
+<meta itemprop="keywords" content="" />
+
+    <div id="hero">
+        <h1 itemprop="headline">  How to develop new Cordova plugins for Ionic without loosing your mind</h1>
+    
+    <time class="post-time"><span class="icon">
+  <i class="fa fa-clock-o" aria-hidden="true"></i>
+</span>
+<span>4 minute read</span>
+<span class="icon">
+ <i class="fa fa-pencil" aria-hidden="true"></i>
+</span>
+
+  Published: <time datetime="2018-01-12T19:21:54-05:00">12 Jan, 2018</time>
+
+</time>
+    </div>
+    <div id="post-box">
+        <div id="post" itemprop="articleBody">
+            
+            
+
+<p>After 9 months of running a production Ionic App (HungerPerks), we finally got to the point where we needed a custom Cordova plugin, distinct enough to not be able to just fork an existing one and make changes to it. Unfortunately, all the articles, Github repos, and documentation were all some combination of outdated, incomplete, or broken.</p>
+
+<p>This article will broadly discuss:</p>
+
+<ol>
+<li>The parts of a Cordova plugin, and where they live in an Ionic app</li>
+<li>A simple example plugin</li>
+<li>How to develop a plugin in a sane way</li>
+</ol>
+
+<p>Now let’s get started!!</p>
+
+<h1 id="the-parts-of-a-cordova-plugin">The parts of a Cordova plugin</h1>
+
+<p>In an Ionic project (say ExampleProject), when you run</p>
+
+<p><code>ionic cordova plugin add &lt;some-cordova-plugin&gt;</code></p>
+
+<p>The Cordova cli goes to the repo where the plugin is stored, and pulls it into the plugins folder within the project (i.e. ExampleProject/plugins/some-cordova-plugin). This is essentially a storehouse for when ionic builds a platform. At this point, when you run</p>
+
+<p><code>ionic cordova platform add &lt;android/ios&gt;</code>
+as a part of the platform add process, Ionic will copy the platform specefic plugin code into the platform build folder. This is where the plugin code lives that is actually deployed onto devices when built or run.</p>
+
+<p>Why should you care? Because when you are working on an in-house plugin, there are three identical copies of the same code, two of which will do nothing to the code on the device when modified without some kind of plugin reinstall or platform reinstall. Worth noting about this setup is that changes to platform plugin code within the platform build folder will be deployed to devices, but I have not yet found a way to changes the javascript code without reinstalling the plugin.</p>
+
+<h1 id="a-simple-example">A simple example</h1>
+
+<p>Before continuing on, I would highly recommend reading <a href="https://medium.com/ionic-and-the-mobile-web/how-to-write-cordova-plugins-864e40025f2">this article</a> on writing Cordova plugins, It discusses objective-c for the ios portion, but otherwise explains the parts of a Cordova plugin well.</p>
+
+<p>Based off of that example, I have created a plugin that does most of the same things in swift 3. Take a look at <a href="https://github.com/mibzman/example-cordova-plugin">https://github.com/mibzman/example-cordova-plugin</a>. This plugin (as of Jan 12, ’18) works with the current version of ionic cli (3.19.0), as well as swift 3.2.</p>
+
+<p>Now that we have these plugins, how do we actually use them in our ionic applications? For most developers, their only experience with plugins is through ionic-native, which provides nice typescript bindings. How do we actually call these custom plugins?</p>
+
+<p>First look at the www/plugin.js of the plugin you want to integrate. The last line is:</p>
+
+<p>module.exports = ExampleCordovaPlugin;
+You can take this info and use it in your ionic application like so:</p>
+
+<p>Hooray! We used someone else’s plugin just like we’ve done all along! Now what?</p>
+
+<h1 id="how-to-develop-a-plugin">How to develop a plugin</h1>
+
+<p>So how do we make changes? The first instinct I had was to make changes in the plugin repo in something like sublime, commit them, and reinstall the plugin in a test application. Spoiler alert: that’s terrible for many, many reasons. One big one is that it takes forever for changes regardless of size. How can we do it in a way that makes more sense?</p>
+
+<p>iOS is a simple example. Open the <code>ExampleProject/platforms/ios/MyApp.xcodeproj</code> file in Xcode, and take a peak in the plugins folder. In there you’ll find all the iOS project files from all the plugins, all unfolded. Somewhere in there is the file for the plugin you care about! Since we learned earlier that changes to the code in the platform folder can be deployed immediately, we can tweak and play away!</p>
+
+<p>This same thing can be done with android studio with the platforms/android folder, but you should use the ionic-cli android build, the android studio build process seems to muck with the ionic gradle build stuff.</p>
+
+<p>The only thing to keep in mind is that changes in these files have to be moved into your actual plugin repo. Since the platform folder is technically build output of ionic, the expectation is that it can be deleted whenever, so be sure to be proactive about moving your changes out of the platform folder.</p>
+
+<p>Finally I noticed some wonkiness when changing plugin names or id’s, so as a rule of thumb if strange things are happening, take a peak at your project’s package.lock, remove references to your plugin, blow away that node_modules folder, and reinstall everything.</p>
+
+<p>I hope you found this somewhat helpful, and hopefully I’ve done a good job of synthesizing some of these concepts I’ve found scattered all over.</p>
+
+<p>Edit: I published the example ionic application that works with this plugin at <a href="https://github.com/mibzman/PluginTester">https://github.com/mibzman/PluginTester</a>.</p>
+
+
+        </div>
+
+        <div class="form-subscribe">
+    <div id="form-subscribe-success" style="display: none;"></div>
+    <div id="form-subscribe-box">
+        
+            <h4>Want to see more stuff like this?</h4>
+        
+
+        
+            <p>Then you should sign up for my newsletter!</p>
+        
+
+        <form action="https://script.google.com/macros/s/AKfycbzau2fvX1n4OKlcVNallYIM9_FB5cDAGuze_suT2jAYgMPx5kEI/exec" name="mc-embedded-subscribe-form" method="post" class="form"><input type="hidden" name="authorize-token" value="">
+            <div id="subscribe-email-validation-error"></div>
+            <div class="form-item">
+                <div class="append">
+                    <input type="text" name="name" id="mce-NAME" placeholder="Name">
+                </div>
+            </div>
+            <div class="form-item">
+                <div class="append">
+                    <input type="email" name="email" id="mce-EMAIL" placeholder="Email">
+                    <button class="button">Subscribe</button>
+                </div>
+            </div>
+    
+            
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="honeypot" tabindex="-1" value=""></div>
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="pageTitle" tabindex="-1" value=How&#32;to&#32;develop&#32;new&#32;Cordova&#32;plugins&#32;for&#32;Ionic&#32;without&#32;loosing&#32;your&#32;mind></div>
+        </form>
+
+        
+    </div>
+</div>
+
+        <div class="">
+            <p>
+  Published
+  
+    
+      by <span itemprop="author"></span>
+    
+  
+  <time datetime="2018-01-12T19:21:54-05:00">
+    12 Jan, 2018
+  </time>
+  
+  
+  using <span itemprop="wordCount">760</span> words.
+</p>
+
+            
+
+
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+</main>
+  <footer>   <footer id="footer">
+    <nav>
+      <ul>
+        
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/articles/">Articles</a>
+        </li>
+
+        <li>
+          <a href="https://twitter.com/@mibzman">Twitter</a>
+        </li>
+      </ul>
+    </nav>
+    <p>&copy; Pepware</p>
+  </footer> </footer>
+
+
+  <script src="/js/kube.js" type="text/javascript">
+  </script>
+  <script src="/js/kube.legenda.js" type="text/javascript">
+  </script>
+  <script src="/js/master.js" type="text/javascript">
+  </script>
+</body>
+
+</html>

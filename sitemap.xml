@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/articles/how-i-got-where-i-am/</loc>
+    <lastmod>2018-06-08T19:49:59-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/articles/crypto-shouldnt-be-cryptic/</loc>
+    <lastmod>2018-06-01T19:44:12-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/articles/ethmemphis/</loc>
+    <lastmod>2018-05-29T19:41:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/articles/so-you-want-to-build-an-app/</loc>
+    <lastmod>2018-05-04T19:31:31-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/articles/pitch/</loc>
+    <lastmod>2018-04-02T19:25:53-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/articles/cordova-plugins/</loc>
+    <lastmod>2018-01-12T19:21:54-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/articles/</loc>
+    <lastmod>2018-06-08T19:49:59-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2018-06-08T19:49:59-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

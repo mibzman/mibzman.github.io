@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Articles on Pepware</title>
+    <link>/articles/</link>
+    <description>Recent content in Articles on Pepware</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 08 Jun 2018 19:49:59 -0500</lastBuildDate>
+    
+	<atom:link href="/articles/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How I got where I am</title>
+      <link>/articles/how-i-got-where-i-am/</link>
+      <pubDate>Fri, 08 Jun 2018 19:49:59 -0500</pubDate>
+      
+      <guid>/articles/how-i-got-where-i-am/</guid>
+      <description>I am an extraordinarily lucky individual. My main interest is crafting software that help people, and I happen to live in an economy where that is highly valued. But that doesn’t tell my whole story. How did I get here?
+I recently graduated with a Bachelors Degree in Computer Science from The University of Akron. While I was at UAkron I learned all about Computer Science as a science, but I was always left wanting for something more.</description>
+    </item>
+    
+    <item>
+      <title>Crypto Shouldn’t be Cryptic</title>
+      <link>/articles/crypto-shouldnt-be-cryptic/</link>
+      <pubDate>Fri, 01 Jun 2018 19:44:12 -0500</pubDate>
+      
+      <guid>/articles/crypto-shouldnt-be-cryptic/</guid>
+      <description>“A Blockchain is a distributed append-only ledger that allows for an arbitrarily high number of actors achieve consensuszzzzzzzzzzzzzzzz……”
+Some things are complicated, and some things are not. A hammer is a simple tool, while a car is not a simple tool. However, both solve a problem which is easy to describe. A hammer lets you hit things harder than you can with your hand. A car lets you move faster than you otherwise could using your legs.</description>
+    </item>
+    
+    <item>
+      <title>Thoughts from Graceland: An ETHMemphis retrospective</title>
+      <link>/articles/ethmemphis/</link>
+      <pubDate>Tue, 29 May 2018 19:41:00 -0500</pubDate>
+      
+      <guid>/articles/ethmemphis/</guid>
+      <description>Earlier this month I had the good fortune to be able to attend ETHMemphis, my first Ethereum Hackathon. The event took place at the FedEx Institute of Technology on the beautiful University of Memphis campus.
+While I was working on my own project, a proof of concept dApp for evidence tracking, I was still able to stir around. This was my very first time being around people who are already interested in or a part of the Ethereum revolution, and there were a couple of things that caught my attention.</description>
+    </item>
+    
+    <item>
+      <title>So You Want to Build an App?</title>
+      <link>/articles/so-you-want-to-build-an-app/</link>
+      <pubDate>Fri, 04 May 2018 19:31:31 -0500</pubDate>
+      
+      <guid>/articles/so-you-want-to-build-an-app/</guid>
+      <description>So you’ve got an idea for an app that you think needs to exist. Or not, but in any case, you want some info on what to do with said idea.
+ What things need to happen to make your idea exist?
+ There are two major questions that you need to consider:
+ Who is going to make it? What do you want your app to do?  Let’s start by answering the first question.</description>
+    </item>
+    
+    <item>
+      <title>Want to Win a Pitch? Ignore the Pitch.</title>
+      <link>/articles/pitch/</link>
+      <pubDate>Mon, 02 Apr 2018 19:25:53 -0500</pubDate>
+      
+      <guid>/articles/pitch/</guid>
+      <description>For many startups, pitch competitions are a vital source of funding. They provide access to capital, much of the time without taking equity. Plus they provide a vital arena for gathering constructive criticism on your concept.
+So what can your organization do to have the best possible shot at taking home 1st place, and maybe even a big cardboard check?
+Ignore the Pitch But why? Let’s first look at what pitch competitions (in general) look at:</description>
+    </item>
+    
+    <item>
+      <title>How to develop new Cordova plugins for Ionic without loosing your mind</title>
+      <link>/articles/cordova-plugins/</link>
+      <pubDate>Fri, 12 Jan 2018 19:21:54 -0500</pubDate>
+      
+      <guid>/articles/cordova-plugins/</guid>
+      <description>After 9 months of running a production Ionic App (HungerPerks), we finally got to the point where we needed a custom Cordova plugin, distinct enough to not be able to just fork an existing one and make changes to it. Unfortunately, all the articles, Github repos, and documentation were all some combination of outdated, incomplete, or broken.
+This article will broadly discuss:
+ The parts of a Cordova plugin, and where they live in an Ionic app A simple example plugin How to develop a plugin in a sane way  Now let’s get started!</description>
+    </item>
+    
+  </channel>
+</rss>
