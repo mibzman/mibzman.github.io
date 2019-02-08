@@ -6,9 +6,91 @@
     <description>Recent content in Tags on Pepware</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Fri, 04 May 2018 19:31:31 -0500</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>App</title>
+      <link>/tags/app/</link>
+      <pubDate>Fri, 04 May 2018 19:31:31 -0500</pubDate>
+      
+      <guid>/tags/app/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cordova</title>
+      <link>/tags/cordova/</link>
+      <pubDate>Fri, 12 Jan 2018 19:21:54 -0500</pubDate>
+      
+      <guid>/tags/cordova/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Crypto</title>
+      <link>/tags/crypto/</link>
+      <pubDate>Fri, 01 Jun 2018 19:44:12 -0500</pubDate>
+      
+      <guid>/tags/crypto/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hybrid Apps</title>
+      <link>/tags/hybrid-apps/</link>
+      <pubDate>Fri, 12 Jan 2018 19:21:54 -0500</pubDate>
+      
+      <guid>/tags/hybrid-apps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ionic</title>
+      <link>/tags/ionic/</link>
+      <pubDate>Fri, 12 Jan 2018 19:21:54 -0500</pubDate>
+      
+      <guid>/tags/ionic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Personal</title>
+      <link>/tags/personal/</link>
+      <pubDate>Fri, 08 Jun 2018 19:49:59 -0500</pubDate>
+      
+      <guid>/tags/personal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pitch</title>
+      <link>/tags/pitch/</link>
+      <pubDate>Mon, 02 Apr 2018 19:25:53 -0500</pubDate>
+      
+      <guid>/tags/pitch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spec</title>
+      <link>/tags/spec/</link>
+      <pubDate>Fri, 04 May 2018 19:31:31 -0500</pubDate>
+      
+      <guid>/tags/spec/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Startup</title>
+      <link>/tags/startup/</link>
+      <pubDate>Mon, 02 Apr 2018 19:25:53 -0500</pubDate>
+      
+      <guid>/tags/startup/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

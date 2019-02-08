@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Crypto on Pepware</title>
+    <link>/tags/crypto/</link>
+    <description>Recent content in Crypto on Pepware</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Jun 2018 19:44:12 -0500</lastBuildDate>
+    
+	<atom:link href="/tags/crypto/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Crypto Shouldn’t be Cryptic</title>
+      <link>/articles/crypto-shouldnt-be-cryptic/</link>
+      <pubDate>Fri, 01 Jun 2018 19:44:12 -0500</pubDate>
+      
+      <guid>/articles/crypto-shouldnt-be-cryptic/</guid>
+      <description>“A Blockchain is a distributed append-only ledger that allows for an arbitrarily high number of actors achieve consensuszzzzzzzzzzzzzzzz……”
+Some things are complicated, and some things are not. A hammer is a simple tool, while a car is not a simple tool. However, both solve a problem which is easy to describe. A hammer lets you hit things harder than you can with your hand. A car lets you move faster than you otherwise could using your legs.</description>
+    </item>
+    
+    <item>
+      <title>Thoughts from Graceland: An ETHMemphis retrospective</title>
+      <link>/articles/ethmemphis/</link>
+      <pubDate>Tue, 29 May 2018 19:41:00 -0500</pubDate>
+      
+      <guid>/articles/ethmemphis/</guid>
+      <description>Earlier this month I had the good fortune to be able to attend ETHMemphis, my first Ethereum Hackathon. The event took place at the FedEx Institute of Technology on the beautiful University of Memphis campus.
+While I was working on my own project, a proof of concept dApp for evidence tracking, I was still able to stir around. This was my very first time being around people who are already interested in or a part of the Ethereum revolution, and there were a couple of things that caught my attention.</description>
+    </item>
+    
+  </channel>
+</rss>

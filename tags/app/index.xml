@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>App on Pepware</title>
+    <link>/tags/app/</link>
+    <description>Recent content in App on Pepware</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 04 May 2018 19:31:31 -0500</lastBuildDate>
+    
+	<atom:link href="/tags/app/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>So You Want to Build an App?</title>
+      <link>/articles/so-you-want-to-build-an-app/</link>
+      <pubDate>Fri, 04 May 2018 19:31:31 -0500</pubDate>
+      
+      <guid>/articles/so-you-want-to-build-an-app/</guid>
+      <description>So you’ve got an idea for an app that you think needs to exist. Or not, but in any case, you want some info on what to do with said idea.
+ What things need to happen to make your idea exist?
+ There are two major questions that you need to consider:
+ Who is going to make it? What do you want your app to do?  Let’s start by answering the first question.</description>
+    </item>
+    
+  </channel>
+</rss>

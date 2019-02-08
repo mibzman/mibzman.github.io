@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rant on Pepware</title>
+    <link>/categories/rant/</link>
+    <description>Recent content in Rant on Pepware</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Jun 2018 19:44:12 -0500</lastBuildDate>
+    
+	<atom:link href="/categories/rant/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Crypto Shouldn’t be Cryptic</title>
+      <link>/articles/crypto-shouldnt-be-cryptic/</link>
+      <pubDate>Fri, 01 Jun 2018 19:44:12 -0500</pubDate>
+      
+      <guid>/articles/crypto-shouldnt-be-cryptic/</guid>
+      <description>“A Blockchain is a distributed append-only ledger that allows for an arbitrarily high number of actors achieve consensuszzzzzzzzzzzzzzzz……”
+Some things are complicated, and some things are not. A hammer is a simple tool, while a car is not a simple tool. However, both solve a problem which is easy to describe. A hammer lets you hit things harder than you can with your hand. A car lets you move faster than you otherwise could using your legs.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Info on Pepware</title>
+    <link>/categories/info/</link>
+    <description>Recent content in Info on Pepware</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 29 May 2018 19:41:00 -0500</lastBuildDate>
+    
+	<atom:link href="/categories/info/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Thoughts from Graceland: An ETHMemphis retrospective</title>
+      <link>/articles/ethmemphis/</link>
+      <pubDate>Tue, 29 May 2018 19:41:00 -0500</pubDate>
+      
+      <guid>/articles/ethmemphis/</guid>
+      <description>Earlier this month I had the good fortune to be able to attend ETHMemphis, my first Ethereum Hackathon. The event took place at the FedEx Institute of Technology on the beautiful University of Memphis campus.
+While I was working on my own project, a proof of concept dApp for evidence tracking, I was still able to stir around. This was my very first time being around people who are already interested in or a part of the Ethereum revolution, and there were a couple of things that caught my attention.</description>
+    </item>
+    
+  </channel>
+</rss>

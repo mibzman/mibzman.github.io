@@ -10,5 +10,41 @@
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Info</title>
+      <link>/categories/info/</link>
+      <pubDate>Tue, 29 May 2018 19:41:00 -0500</pubDate>
+      
+      <guid>/categories/info/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rant</title>
+      <link>/categories/rant/</link>
+      <pubDate>Fri, 01 Jun 2018 19:44:12 -0500</pubDate>
+      
+      <guid>/categories/rant/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Story</title>
+      <link>/categories/story/</link>
+      <pubDate>Fri, 08 Jun 2018 19:49:59 -0500</pubDate>
+      
+      <guid>/categories/story/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tutorial</title>
+      <link>/categories/tutorial/</link>
+      <pubDate>Fri, 04 May 2018 19:31:31 -0500</pubDate>
+      
+      <guid>/categories/tutorial/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

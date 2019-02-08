@@ -43,6 +43,12 @@
   </url>
   
   <url>
+    <loc>/tags/app/</loc>
+    <lastmod>2018-05-04T19:31:31-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/articles/</loc>
     <lastmod>2018-06-08T19:49:59-05:00</lastmod>
     <priority>0</priority>
@@ -54,12 +60,89 @@
   </url>
   
   <url>
+    <loc>/tags/cordova/</loc>
+    <lastmod>2018-01-12T19:21:54-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/crypto/</loc>
+    <lastmod>2018-06-01T19:44:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/hybrid-apps/</loc>
+    <lastmod>2018-01-12T19:21:54-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/info/</loc>
+    <lastmod>2018-05-29T19:41:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/ionic/</loc>
+    <lastmod>2018-01-12T19:21:54-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/</loc>
     <lastmod>2019-01-03T13:49:18-05:00</lastmod>
   </url>
   
   <url>
+    <loc>/tags/personal/</loc>
+    <lastmod>2018-06-08T19:49:59-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/pitch/</loc>
+    <lastmod>2018-04-02T19:25:53-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/vtc_pivacy_policy/</loc>
+  </url>
+  
+  <url>
+    <loc>/categories/rant/</loc>
+    <lastmod>2018-06-01T19:44:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/spec/</loc>
+    <lastmod>2018-05-04T19:31:31-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/startup/</loc>
+    <lastmod>2018-04-02T19:25:53-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/story/</loc>
+    <lastmod>2018-06-08T19:49:59-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/</loc>
+    <lastmod>2018-05-04T19:31:31-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/tutorial/</loc>
+    <lastmod>2018-05-04T19:31:31-05:00</lastmod>
     <priority>0</priority>
   </url>
   
