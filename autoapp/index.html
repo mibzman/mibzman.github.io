@@ -21,7 +21,7 @@
 
 
   <meta property="og:title" content="Let&#39;s Auto App" />
-<meta property="og:description" content="  If you aren&#39;t redirected, click here     var stripe = Stripe(&#34;pk_live_CqE99hxv0assGNPUyACH1LKv00wfms7hMg&#34;); var checkoutButton = document.getElementById( &#34;checkout-button-plan_F1WhX5NIq87ZJ5&#34; ); checkout(); function checkout() { stripe .redirectToCheckout({ items: [{ plan: &#34;plan_F1WhX5NIq87ZJ5&#34;, quantity: 1 }], successUrl: window.location.protocol &#43; &#34;//pepware.io&#34;, cancelUrl: window.location.protocol &#43; &#34;//pepware.io&#34; }) .then(function(result) { if (result.error) { var displayError = document.getElementById(&#34;error-message&#34;); displayError.textContent = result.error.message; } }); } checkoutButton.addEventListener(&#34;click&#34;, checkout);  " />
+<meta property="og:description" content="  If you aren&#39;t redirected, click here     var stripe = Stripe(&#34;pk_test_6QIO1XhgLFd6FBsf556nL11Q00AaQbM3hg&#34;); var checkoutButton = document.getElementById( &#34;checkout-button-plan_F1Wy9d4JphhHv2&#34; ); function checkout() { stripe .redirectToCheckout({ items: [{ plan: &#34;plan_F1Wy9d4JphhHv2&#34;, quantity: 1 }], successUrl: window.location.protocol &#43; &#34;//pepware.io/success&#34;, cancelUrl: window.location.protocol &#43; &#34;//pepware.io/canceled&#34; }) .then(function(result) { if (result.error) { var displayError = document.getElementById(&#34;error-message&#34;); displayError.textContent = result.error.message; } }); } checkoutButton.addEventListener(&#34;click&#34;, checkout);  " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/autoapp/" />
 
@@ -108,11 +108,11 @@ if (!doNotTrack) {
 <div class="push-center" itemscope itemtype="http://schema.org/BlogPosting">
     
 <meta itemprop="name" content="Let&#39;s Auto App">
-<meta itemprop="description" content="  If you aren&#39;t redirected, click here     var stripe = Stripe(&#34;pk_live_CqE99hxv0assGNPUyACH1LKv00wfms7hMg&#34;); var checkoutButton = document.getElementById( &#34;checkout-button-plan_F1WhX5NIq87ZJ5&#34; ); checkout(); function checkout() { stripe .redirectToCheckout({ items: [{ plan: &#34;plan_F1WhX5NIq87ZJ5&#34;, quantity: 1 }], successUrl: window.location.protocol &#43; &#34;//pepware.io&#34;, cancelUrl: window.location.protocol &#43; &#34;//pepware.io&#34; }) .then(function(result) { if (result.error) { var displayError = document.getElementById(&#34;error-message&#34;); displayError.textContent = result.error.message; } }); } checkoutButton.addEventListener(&#34;click&#34;, checkout);  ">
+<meta itemprop="description" content="  If you aren&#39;t redirected, click here     var stripe = Stripe(&#34;pk_test_6QIO1XhgLFd6FBsf556nL11Q00AaQbM3hg&#34;); var checkoutButton = document.getElementById( &#34;checkout-button-plan_F1Wy9d4JphhHv2&#34; ); function checkout() { stripe .redirectToCheckout({ items: [{ plan: &#34;plan_F1Wy9d4JphhHv2&#34;, quantity: 1 }], successUrl: window.location.protocol &#43; &#34;//pepware.io/success&#34;, cancelUrl: window.location.protocol &#43; &#34;//pepware.io/canceled&#34; }) .then(function(result) { if (result.error) { var displayError = document.getElementById(&#34;error-message&#34;); displayError.textContent = result.error.message; } }); } checkoutButton.addEventListener(&#34;click&#34;, checkout);  ">
 
 
 
-<meta itemprop="wordCount" content="55">
+<meta itemprop="wordCount" content="54">
 
 
 
@@ -135,7 +135,7 @@ if (!doNotTrack) {
 <div class="form-subscribe">
   <button
     style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
-    id="checkout-button-plan_F1WhX5NIq87ZJ5"
+    id="checkout-button-plan_F1Wy9d4JphhHv2"
     role="link"
   >
     If you aren't redirected, click here
@@ -145,26 +145,23 @@ if (!doNotTrack) {
 <div id="error-message"></div>
 
 <script>
-  var stripe = Stripe("pk_live_CqE99hxv0assGNPUyACH1LKv00wfms7hMg");
+  var stripe = Stripe("pk_test_6QIO1XhgLFd6FBsf556nL11Q00AaQbM3hg");
 
   var checkoutButton = document.getElementById(
-    "checkout-button-plan_F1WhX5NIq87ZJ5"
+    "checkout-button-plan_F1Wy9d4JphhHv2"
   );
-
-  checkout();
+  
 
   function checkout() {
-    
-    
     stripe
       .redirectToCheckout({
-        items: [{ plan: "plan_F1WhX5NIq87ZJ5", quantity: 1 }],
+        items: [{ plan: "plan_F1Wy9d4JphhHv2", quantity: 1 }],
 
         
         
         
-        successUrl: window.location.protocol + "//pepware.io",
-        cancelUrl: window.location.protocol + "//pepware.io"
+        successUrl: window.location.protocol + "//pepware.io/success",
+        cancelUrl: window.location.protocol + "//pepware.io/canceled"
       })
       .then(function(result) {
         if (result.error) {

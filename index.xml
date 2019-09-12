@@ -106,7 +106,7 @@ This article will broadly discuss:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/autoapp/</guid>
-      <description>  If you aren&#39;t redirected, click here     var stripe = Stripe(&#34;pk_live_CqE99hxv0assGNPUyACH1LKv00wfms7hMg&#34;); var checkoutButton = document.getElementById( &#34;checkout-button-plan_F1WhX5NIq87ZJ5&#34; ); checkout(); function checkout() { stripe .redirectToCheckout({ items: [{ plan: &#34;plan_F1WhX5NIq87ZJ5&#34;, quantity: 1 }], successUrl: window.location.protocol + &#34;//pepware.io&#34;, cancelUrl: window.location.protocol + &#34;//pepware.io&#34; }) .then(function(result) { if (result.error) { var displayError = document.getElementById(&#34;error-message&#34;); displayError.textContent = result.error.message; } }); } checkoutButton.addEventListener(&#34;click&#34;, checkout);  </description>
+      <description>  If you aren&#39;t redirected, click here     var stripe = Stripe(&#34;pk_test_6QIO1XhgLFd6FBsf556nL11Q00AaQbM3hg&#34;); var checkoutButton = document.getElementById( &#34;checkout-button-plan_F1Wy9d4JphhHv2&#34; ); function checkout() { stripe .redirectToCheckout({ items: [{ plan: &#34;plan_F1Wy9d4JphhHv2&#34;, quantity: 1 }], successUrl: window.location.protocol + &#34;//pepware.io/success&#34;, cancelUrl: window.location.protocol + &#34;//pepware.io/canceled&#34; }) .then(function(result) { if (result.error) { var displayError = document.getElementById(&#34;error-message&#34;); displayError.textContent = result.error.message; } }); } checkoutButton.addEventListener(&#34;click&#34;, checkout);  </description>
     </item>
     
     <item>
