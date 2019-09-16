@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Weeknotes on Pepware</title>
+    <link>/weeknotes/</link>
+    <description>Recent content in Weeknotes on Pepware</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 16 Sep 2019 11:09:36 -0400</lastBuildDate>
+    
+	<atom:link href="/weeknotes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>#1 - Hello World</title>
+      <link>/weeknotes/1/</link>
+      <pubDate>Mon, 16 Sep 2019 11:09:36 -0400</pubDate>
+      
+      <guid>/weeknotes/1/</guid>
+      <description>Hello! @thatnatbuckley posted a weeknote to twitter the other day. I&amp;rsquo;m trying to get into the habit of doing weekly reviews, so I&amp;rsquo;m doing one as well!
+What I did This was a pretty busy week! I&amp;rsquo;ve been doing a ton of neat stuff behind the scenes for my amazing new project, WeeklyProject.Club. We just hit the 200 subscriber mark and I&amp;rsquo;m super excited! I think there&amp;rsquo;s some great stuff coming down the pipe.</description>
+    </item>
+    
+  </channel>
+</rss>
